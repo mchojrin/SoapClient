@@ -1,5 +1,5 @@
 FROM php:8-cli
-COPY . /usr/src/myapp
+COPY ./*.php /usr/src/myapp/
 WORKDIR /usr/src/myapp
 RUN apt-get update -y \
   && apt-get install -y \
